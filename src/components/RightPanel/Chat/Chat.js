@@ -1,6 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
-import * as Actions from "../../../redux/actions/actions";
+import {
+  addNewMessage,
+  changeMessageBody,
+  resetMessageBody,
+  changeActivePanel,
+} from "../../../redux/actions/actions";
 import styles from "./Chat.module.css";
 
 const Chat = (props) => {
@@ -68,17 +73,9 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    addNewMessage: (message) => {
-      dispatch(Actions.addNewMessage(message));
-    },
-    changeMessageBody: (message) => {
-      dispatch(Actions.changeMessageBody(message));
-    },
-    resetMessageBody: () => dispatch(Actions.resetMessageBody()),
-    changeActivePanel: () => dispatch(Actions.changeActivePanel()),
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Chat);
+export default connect(mapStateToProps, {
+  addNewMessage,
+  changeMessageBody,
+  resetMessageBody,
+  changeActivePanel,
+})(Chat);

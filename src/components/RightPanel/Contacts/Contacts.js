@@ -27,12 +27,4 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-    changeFollowingUser: (message) => {
-      dispatch(Actions.addNewMessage(message));
-    },
-  };
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Contacts);
+export default connect(mapStateToProps, null)(Contacts);
