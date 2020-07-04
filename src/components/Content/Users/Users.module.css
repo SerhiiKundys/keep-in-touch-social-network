@@ -1,0 +1,53 @@
+.findUsersContainer .findUsersTextAreaContainer textarea {
+  padding: 10px;
+  padding-left: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  background: #ffffff !important;
+  outline: none;
+  height: 25px;
+  width: 30%;
+  font-size: 18px;
+  font-family: Tahoma;
+  resize: none;
+  overflow-y: hidden;
+}
+
+.findUsersContainer .findUsersTextAreaContainer textarea:focus {
+  color: #003a69;
+  border: 1px solid rgb(25, 117, 255);
+}
+
+.usersContainer {
+  display: block;
+  grid-area: rightPanel;
+  margin-left: 50px;
+  height: 500px;
+  overflow-y: scroll;
+  /* width: 100%; */
+  /* justify-content: center; */
+  /* background-color: tomato; */
+}
+.findUsersTextAreaContainer {
+  justify-content: center;
+  padding: 5px;
+  width: 100%;
+}
+.usersContainer::-webkit-scrollbar {
+  width: 3px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.usersContainer::-webkit-scrollbar-thumb {
+  background: rgb(168, 203, 255);
+}
+
+.activePage {
+  font-weight: bold;
+}
+
+.usersPagesPagination {
+  width: 200px;
+  height: 80px;
+  background-color: tomato;
+}

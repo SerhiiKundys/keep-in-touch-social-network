@@ -1,0 +1,27 @@
+.navButtonContainer {
+  display: inline-block;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.navButton {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.navButton:hover {
+  background-color: rgb(168, 203, 255);
+}
+
+.title {
+  color: white;
+}

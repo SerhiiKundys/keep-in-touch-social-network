@@ -1,0 +1,17 @@
+.contactsContainer {
+  display: block;
+  grid-area: rightPanel;
+  height: 500px;
+  overflow-y: scroll;
+  /* justify-content: center; */
+  /* background-color: tomato; */
+}
+
+.contactsContainer::-webkit-scrollbar {
+  width: 3px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.contactsContainer::-webkit-scrollbar-thumb {
+  background: rgb(168, 203, 255);
+}

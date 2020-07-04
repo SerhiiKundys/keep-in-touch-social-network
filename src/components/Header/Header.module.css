@@ -1,0 +1,6 @@
+.header {
+  display: grid;
+  grid-area: header;
+  grid-template-areas: "navUser navBar navChat";
+  grid-template-columns: 3fr 7fr 3fr;
+}

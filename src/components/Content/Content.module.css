@@ -1,0 +1,6 @@
+.contentContainer {
+  grid-area: mainContent;
+  width: 300;
+  height: 300;
+  background-color: white;
+}

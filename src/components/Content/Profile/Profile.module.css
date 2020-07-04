@@ -1,0 +1,61 @@
+.profileContainer {
+  display: block;
+  width: 95%;
+  /*  height: 65px; */
+  padding: 5px;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgb(168, 203, 255);
+}
+
+.profileContainer:first-child {
+  border-top: 1px solid rgb(168, 203, 255);
+}
+
+.profileContainer img {
+  width: 40%;
+  height: auto;
+}
+
+.profileShortDescription {
+  display: block;
+  /* background-color: tomato; */
+  /* justify-content: center; */
+  margin-top: 15px;
+  height: 200px;
+}
+
+.profileContainer .profileUserName {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+.profileContainer .profileUserLocation {
+  font-size: 20px;
+  color: grey;
+  margin-left: 0px;
+  margin-top: -10px;
+}
+
+.profileUserFollowingContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.changeFollowingButton {
+  background-color: rgb(25, 117, 255);
+  font-size: 15px;
+  margin: 0;
+  width: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.changeFollowingButton:hover {
+  background-color: rgb(168, 203, 255);
+}

@@ -1,0 +1,37 @@
+.navButtonContainer {
+  display: inline-block;
+  padding: 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+button:focus {
+  outline: none;
+}
+
+.navButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: -10px;
+  background-color: white;
+  border-radius: 50%;
+}
+.navButton:hover {
+  background-color: rgb(168, 203, 255);
+}
+
+.title {
+  font-size: 15px;
+  color: white;
+}

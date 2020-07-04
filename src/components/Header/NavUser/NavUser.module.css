@@ -1,0 +1,21 @@
+.navUser {
+  grid-area: navUser;
+  background-color: rgb(25, 117, 255);
+}
+
+.navUserIcon {
+  border-radius: 50%;
+}
+.navUserIcon img {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.navUserDescription {
+  color: white;
+  margin-top: 2px;
+}

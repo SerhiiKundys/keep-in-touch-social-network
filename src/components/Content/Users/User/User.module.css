@@ -1,0 +1,62 @@
+.userContainer {
+  display: flex;
+  width: 95%;
+  height: 65px;
+  padding: 5px;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgb(168, 203, 255);
+}
+
+.navLinkContainer {
+  display: flex;
+  text-decoration: none;
+}
+
+.userContainer:first-child {
+  border-top: 1px solid rgb(168, 203, 255);
+}
+
+.userContainer img {
+  height: 100%;
+}
+
+.userShortDescription {
+  display: block;
+  width: 300px;
+  height: 65px;
+}
+
+.userContainer .userName {
+  font-size: 17px;
+  color: black;
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+.userContainer .userLocation {
+  font-size: 17px;
+  color: grey;
+  margin-left: 0px;
+  margin-top: -10px;
+}
+
+.userFollowingContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.changeFollowingButton {
+  background-color: rgb(25, 117, 255);
+  font-size: 15px;
+  margin: 0;
+  width: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  cursor: pointer;
+}
+
+.changeFollowingButton:hover {
+  background-color: rgb(168, 203, 255);
+}

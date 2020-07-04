@@ -1,0 +1,6 @@
+.panelContainer {
+  grid-area: rightPanel;
+  display: block;
+  border-left: 2px solid rgb(168, 203, 255);
+  border-bottom: 2px solid rgb(168, 203, 255);
+}

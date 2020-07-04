@@ -1,0 +1,5 @@
+.navBar {
+  display: flex;
+  grid-area: navBar;
+  background-color: rgb(25, 117, 255);
+}
