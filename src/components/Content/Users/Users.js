@@ -1,7 +1,9 @@
 import React from "react";
+import { compose } from "redux";
 import { connect } from "react-redux";
 import styles from "./Users.module.css";
 import User from "./User/User";
+import { withAuthRedirect } from "../../../hocs/withAuthRedirect";
 import {
   changeFindUsersBody,
   resetFindUsersBody,
@@ -58,6 +60,9 @@ const Users = (props) => {
     props.changeFindUsersBody(body);
   };
 
+  /* if (!props.isLogined) {
+    return <Redirect to="/auth" />;
+  } else { */
   return (
     <div className={styles.findUsersContainer}>
       <div className={styles.findUsersTextAreaContainer}>
@@ -100,9 +105,10 @@ const Users = (props) => {
       </div>
     </div>
   );
+  /* } */
 };
 
-function mapStateToProps(state) {
+const mapStateToProps = (state) => {
   return {
     users: state.contentUsers.users,
     findUsersBody: state.contentUsers.findUsersBody,
@@ -111,13 +117,16 @@ function mapStateToProps(state) {
     numPerPage: state.contentUsers.numPerPage,
     currentPage: state.contentUsers.currentPage,
   };
-}
+};
 
-export default connect(mapStateToProps, {
-  changeFindUsersBody,
-  resetFindUsersBody,
-  setCurrentPage,
-  setUsers,
-  setTotalUsersCount,
-  setPagesCount,
-})(Users);
+export default compose(
+  connect(mapStateToProps, {
+    changeFindUsersBody,
+    resetFindUsersBody,
+    setCurrentPage,
+    setUsers,
+    setTotalUsersCount,
+    setPagesCount,
+  }),
+  withAuthRedirect
+)(Users);

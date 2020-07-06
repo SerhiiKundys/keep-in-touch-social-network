@@ -4,10 +4,12 @@ import {
 } from "../types/types";
 
 const initialState = {
+  documents: [],
   findDocumentBody: "",
   currentPage: 1,
   totalDocumentsCount: null,
   numPerPage: 10,
+  pagesCount: null,
 };
 
 export const contentDocumentsReducer = (state = initialState, action) => {

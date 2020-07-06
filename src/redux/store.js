@@ -1,6 +1,7 @@
 import { createStore, applyMiddleware, combineReducers, compose } from "redux";
-//import thunk from "redux-thunk";
+import thunk from "redux-thunk";
 import { chatReducer } from "./reducers/chatReducer";
+import { authReducer } from "./reducers/authReducer";
 import { contentFeedsReducer } from "./reducers/contentFeedsReducer";
 import { contentMusicReducer } from "./reducers/contentMusicReducer";
 import { contentImagesReducer } from "./reducers/contentImagesReducer";
@@ -12,6 +13,7 @@ import { navReducer } from "./reducers/navReducer";
 
 let reducers = combineReducers({
   chat: chatReducer,
+  auth: authReducer,
   contentFeeds: contentFeedsReducer,
   contentMusic: contentMusicReducer,
   contentImages: contentImagesReducer,
@@ -25,6 +27,9 @@ let reducers = combineReducers({
 export const store = createStore(
   reducers,
   compose(
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    applyMiddleware(
+      thunk
+    ) /* ,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__() */
   )
 );

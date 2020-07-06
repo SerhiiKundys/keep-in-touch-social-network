@@ -50,6 +50,32 @@ export const changeFollowingUser = (userId) => {
   };
 };
 
+/* export const follow = (userId) => {
+  return (dispatch) => {
+    //dispatch(setFollowingInProgress(true, user.id));
+    usersAPI.follow(user.id)
+    .then(response => {
+      if(response.data.resultCode == 0){
+        dispatch(setFollowing(userId));
+      }
+      //dispatch(setFollowingInProgress(false, user.id));
+    })
+  }
+} */
+
+/* export const unfollow = (userId) => {
+  return (dispatch) => {
+    //dispatch(setFollowingInProgress(true, user.id));
+    usersAPI.unfollow(user.id)
+    .then(response => {
+      if(response.data.resultCode == 0){
+        dispatch(setUnfollowing(userId));
+      }
+      //dispatch(setFollowingInProgress(false, user.id));
+    })
+  }
+} */
+
 export const changeFindUsersBody = (newBody) => {
   return {
     type: USERS_CHANGE_FIND_USER_BODY,

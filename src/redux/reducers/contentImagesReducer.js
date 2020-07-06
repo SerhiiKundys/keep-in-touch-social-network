@@ -4,10 +4,12 @@ import {
 } from "../types/types";
 
 const initialState = {
+  images: [],
   findImagesBody: "",
   currentPage: 1,
   totalImagesCount: null,
   numPerPage: 10,
+  pagesCount: null,
 };
 
 export const contentImagesReducer = (state = initialState, action) => {

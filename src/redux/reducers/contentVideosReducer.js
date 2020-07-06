@@ -4,10 +4,12 @@ import {
 } from "../types/types";
 
 const initialState = {
+  videos: [],
   findVideosBody: "",
   currentPage: 1,
   totalVideosCount: null,
   numPerPage: 10,
+  pagesCount: null,
 };
 
 export const contentVideosReducer = (state = initialState, action) => {

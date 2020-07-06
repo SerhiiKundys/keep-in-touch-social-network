@@ -4,10 +4,12 @@ import {
 } from "../types/types";
 
 const initialState = {
+  feeds: [],
   findFeedsBody: "",
   currentPage: 1,
   totalFeedsCount: null,
   numPerPage: 10,
+  pagesCount: null,
 };
 
 export const contentFeedsReducer = (state = initialState, action) => {

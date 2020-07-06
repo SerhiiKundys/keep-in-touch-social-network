@@ -4,10 +4,12 @@ import {
 } from "../types/types";
 
 const initialState = {
+  music: [],
   findMusicBody: "",
   currentPage: 1,
   totalMusicCount: null,
   numPerPage: 10,
+  pagesCount: null,
 };
 
 export const contentMusicReducer = (state = initialState, action) => {
